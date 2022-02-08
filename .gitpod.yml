@@ -6,3 +6,4 @@ tasks:
 github:
   prebuilds:
     addCheck: prevent-merge-on-error
+    addComment: true
