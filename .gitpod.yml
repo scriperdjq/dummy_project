@@ -1,9 +1,10 @@
 tasks:
-  - init: |
-      echo 'TODO: build project'
-    command: |
-      echo 'TODO: start app'
+  - init: npm install
+    command: echo 'start script'
 github:
   prebuilds:
     addCheck: prevent-merge-on-error
     addComment: true
+ports:
+  - port: 8000
+    onOpen: open-preview
